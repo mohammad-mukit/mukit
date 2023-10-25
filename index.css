@@ -1,0 +1,117 @@
+*{
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    margin: 0 10vw 0 10vw ;
+}
+
+.main-container{
+    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
+    height: 80vh;
+    width:  70vw;
+    margin: 0 10vw 0 10vw;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "myself myself myself myself about about"
+        "myself myself myself myself about about"
+        "blogs blogs contact contact links links"
+        "blogs blogs contact contact links links";
+    grid-gap: 0.5rem;
+}
+
+
+.myself{
+    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: myself;
+    border-radius: 15px;
+}
+
+.myself img{
+   width: 40%;
+   height: 90%;
+   border-radius: 15px;
+}
+
+.myself .myself-info{
+    width: 50%;
+    height: 85%;
+    color: white;
+
+}
+
+.about{
+    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
+    grid-area: about;
+    border-radius: 15px;
+
+}
+
+.blogs{
+    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
+    grid-area: blogs;
+    border-radius: 15px;
+
+}
+
+.contact{
+    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
+    grid-area: contact;
+    border-radius: 15px;
+
+}
+
+.links{
+    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
+    grid-area: links;
+    border-radius: 15px;
+
+}
+
+
+@media only screen and (max-width:500px){
+
+    .main-container{
+        height: 200vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 1.5fr 1fr 1fr;
+        grid-template-areas: 
+            "myself"
+            "about"
+            "blogs"
+            "contact"
+            "links";
+
+    }
+    
+    .myself{
+        flex-direction: column;
+    }
+    .myself img{
+        width: 50%;
+        margin-top: 10px;
+     }
+    .myself .myself-info{
+        width: 80%;
+    }
+
+
+}
