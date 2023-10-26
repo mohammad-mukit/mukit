@@ -12,9 +12,15 @@ body{
     margin: 0;
     padding: 0;
 }
+.active{
+    background-color: yellow;
+    text-decoration: underline;
+    font-size: 14px;
+}
 
 .logo{
     margin: 0 10vw 0 10vw ;
+    cursor: pointer;
 }
 
 .main-container{
@@ -30,8 +36,8 @@ body{
     grid-template-areas: 
         "myself myself myself myself about about"
         "myself myself myself myself about about"
-        "blogs blogs contact contact links links"
-        "blogs blogs contact contact links links";
+        "blogs blogs skills skills links links"
+        "blogs blogs skills skills links links";
     grid-gap: 0.5rem;
 }
 
@@ -62,29 +68,128 @@ body{
     background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
     grid-area: about;
     border-radius: 15px;
-
+    padding-top: 10px;
+}
+.about .aboutbtns-div{
+    display: flex;
+    flex-wrap: wrap;
+    height: 15%;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+.about .aboutbtns-div button{
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0),rgb(255, 72, 72));
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    color: whitesmoke;
 }
 
+.about .about-info{
+    height: 75%;
+    width: 90%;
+    margin: 10px;
+    color: aliceblue;
+    display: none;
+}
+
+
 .blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
     background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
     grid-area: blogs;
     border-radius: 15px;
-
+    
+}
+.blogs h2{
+    text-align: center;
+    height: 15%;
+    width: 100%;
+    color: rgba(52, 192, 147, 0.64);
+}
+.blogs .blog-item{
+    display: flex;
+    flex-wrap:wrap ;
+    height: 70%;
+    width: 100%;
+}
+.blogs .blog-item a{
+    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
+    height: 30%;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;    
 }
 
-.contact{
+.skills{
     background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
-    grid-area: contact;
+    grid-area: skills;
     border-radius: 15px;
 
 }
 
 .links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
     background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
     grid-area: links;
     border-radius: 15px;
 
 }
+.links h2{
+    height: 10%;
+    width:100%;
+    text-align: center;
+    color: aqua;
+}
+.links .link-item1{
+    display: flex;
+    flex-wrap: wrap;
+    height: 35%;
+    width: 100%;
+}
+.links .link-item1 a{
+    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
+    height: 40%;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+.links .link-item2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 100%;
+}
+
+.links .link-item2 a{
+    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
+    height: 40%;
+    width: 30%;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: aliceblue;
+    text-align: center;
+}
+
 
 
 @media only screen and (max-width:500px){
@@ -97,7 +202,7 @@ body{
             "myself"
             "about"
             "blogs"
-            "contact"
+            "skills"
             "links";
 
     }

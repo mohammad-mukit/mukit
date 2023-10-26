@@ -1,0 +1,44 @@
+*{
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000000;
+}
+
+.logo{
+    margin: 0 10vw 0 10vw ;
+    cursor: pointer;
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
+    height: 80vh;
+    width:  70vw;
+    margin: 0 10vw 0 10vw;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+.main-container a{
+    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
+    height: 200px;
+    width: 200px;
+    margin-top: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: rgba(174, 174, 174, 0.888);
+    font-size: 18px;
+}
+
+
