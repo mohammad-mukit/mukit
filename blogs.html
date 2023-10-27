@@ -14,71 +14,27 @@
     </div>
 
     <div class="main-container">
-      <a class="blog" href="blogview.html">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error
-        vero amet! Temporibus, architecto animi officiis, nesciunt laborum
-        eligendi, asperiores amet rem quaerat culpa quo! Doloremque voluptates
-        molestiae praesentium voluptatibus, labore rem excepturi odio esse atque
-        facere illo sequi in, rerum ullam ratione vitae illum, nobis totam.
-        Veritatis, provident impedit aut natus amet pariatur delectus similique
-        laboriosam maiores vel tenetur facere necessitatibus minus soluta, nemo
-        cumque! Numquam voluptates ea sapiente saepe sint minus debitis,
-        corrupti omnis rerum dolores earum fuga. Excepturi voluptas consectetur
-        aspernatur earum ea, dolore doloremque nisi cupiditate nam qui labore
-        neque amet, nobis, provident animi distinctio possimus.
-      </a>
-      <a class="blog" href="blogview.html">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error
-        vero amet! Temporibus, architecto animi officiis, nesciunt laborum
-        eligendi, asperiores amet rem quaerat culpa quo! Doloremque voluptates
-        molestiae praesentium voluptatibus, labore rem excepturi odio esse atque
-        facere illo sequi in, rerum ullam ratione vitae illum, nobis totam.
-        Veritatis, provident impedit aut natus amet pariatur delectus similique
-        laboriosam maiores vel tenetur facere necessitatibus minus soluta, nemo
-        cumque! Numquam voluptates ea sapiente saepe sint minus debitis,
-        corrupti omnis rerum dolores earum fuga. Excepturi voluptas consectetur
-        aspernatur earum ea, dolore doloremque nisi cupiditate nam qui labore
-        neque amet, nobis, provident animi distinctio possimus.
-      </a>
-      <a class="blog" href="blogview.html">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error
-        vero amet! Temporibus, architecto animi officiis, nesciunt laborum
-        eligendi, asperiores amet rem quaerat culpa quo! Doloremque voluptates
-        molestiae praesentium voluptatibus, labore rem excepturi odio esse atque
-        facere illo sequi in, rerum ullam ratione vitae illum, nobis totam.
-        Veritatis, provident impedit aut natus amet pariatur delectus similique
-        laboriosam maiores vel tenetur facere necessitatibus minus soluta, nemo
-        cumque! Numquam voluptates ea sapiente saepe sint minus debitis,
-        corrupti omnis rerum dolores earum fuga. Excepturi voluptas consectetur
-        aspernatur earum ea, dolore doloremque nisi cupiditate nam qui labore
-        neque amet, nobis, provident animi distinctio possimus.
-      </a>
-      <a class="blog" href="blogview.html">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error
-        vero amet! Temporibus, architecto animi officiis, nesciunt laborum
-        eligendi, asperiores amet rem quaerat culpa quo! Doloremque voluptates
-        molestiae praesentium voluptatibus, labore rem excepturi odio esse atque
-        facere illo sequi in, rerum ullam ratione vitae illum, nobis totam.
-        Veritatis, provident impedit aut natus amet pariatur delectus similique
-        laboriosam maiores vel tenetur facere necessitatibus minus soluta, nemo
-        cumque! Numquam voluptates ea sapiente saepe sint minus debitis,
-        corrupti omnis rerum dolores earum fuga. Excepturi voluptas consectetur
-        aspernatur earum ea, dolore doloremque nisi cupiditate nam qui labore
-        neque amet, nobis, provident animi distinctio possimus.
-      </a>
-      <a class="blog" href="blogview.html">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error
-        vero amet! Temporibus, architecto animi officiis, nesciunt laborum
-        eligendi, asperiores amet rem quaerat culpa quo! Doloremque voluptates
-        molestiae praesentium voluptatibus, labore rem excepturi odio esse atque
-        facere illo sequi in, rerum ullam ratione vitae illum, nobis totam.
-        Veritatis, provident impedit aut natus amet pariatur delectus similique
-        laboriosam maiores vel tenetur facere necessitatibus minus soluta, nemo
-        cumque! Numquam voluptates ea sapiente saepe sint minus debitis,
-        corrupti omnis rerum dolores earum fuga. Excepturi voluptas consectetur
-        aspernatur earum ea, dolore doloremque nisi cupiditate nam qui labore
-        neque amet, nobis, provident animi distinctio possimus.
-      </a>
+      <button onclick="loadtext('files/amar_programming.txt')">আমার প্রোগ্রামিং</button>
+      <button onclick="loadtext('files/programmingtalks.txt')">প্রোগ্রামিং এর কিছু কথা </button>
+      <button onclick="loadtext('files/programmingtips.txt')">প্রোগ্রামিং শেখার টিপস</button>
+      <button onclick="loadtext('files/blog1.txt')">Comming Soon</button>
+      
     </div>
   </body>
+
+
+  <script>
+    function loadtext(fileName){
+
+      fetch(fileName)
+      .then((response) => response.text())
+      .then((text) => {
+        localStorage.setItem("textData", text);
+
+        window.location.href = "blogview.html";
+      });
+
+    }
+
+  </script>
 </html>

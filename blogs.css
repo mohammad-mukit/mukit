@@ -27,18 +27,24 @@ body{
     border-radius: 20px;
     
 }
-.main-container a{
-    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
-    height: 200px;
-    width: 200px;
-    margin-top: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
+
+.main-container button{
+    height: 30%;
+    width: 40%;
+    margin-top: 10px;
     padding: 10px;
-    color: rgba(174, 174, 174, 0.888);
-    font-size: 18px;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0),rgba(0, 0, 0, 0.826));
+    border-radius: 20px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: azure;
+    cursor: pointer;
+}
+
+.main-container p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: hsla(180, 100%, 97%, 0.60);
 }
 
 

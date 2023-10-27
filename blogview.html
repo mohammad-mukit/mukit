@@ -13,6 +13,16 @@
       </a>
     </div>
 
-    <div class="main-container"></div>
+    <div class="main-container">
+      <p id="textDisplay"></p>
+    </div>
   </body>
+
+  <script>
+    const text = localStorage.getItem('textData');
+
+    if(text){
+      document.getElementById('textDisplay').innerText = text;
+    }
+  </script>
 </html>

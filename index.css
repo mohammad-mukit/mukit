@@ -61,6 +61,7 @@ body{
     width: 50%;
     height: 85%;
     color: white;
+    font-size: 18px;
 
 }
 
@@ -91,7 +92,10 @@ body{
     height: 75%;
     width: 90%;
     margin: 10px;
-    color: aliceblue;
+    color: rgba(240, 248, 255, 0.701);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
     display: none;
 }
 
@@ -119,6 +123,9 @@ body{
     width: 100%;
 }
 .blogs .blog-item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
     height: 30%;
     width: 100%;
@@ -126,8 +133,7 @@ body{
     margin-top: 5px;
     text-decoration: none;
     font-size: 20px;
-    color: aliceblue;
-    text-align: center;    
+    color: aliceblue;    
 }
 
 .skills{
@@ -148,11 +154,13 @@ body{
 
 }
 .links h2{
-    height: 10%;
+    height: 15%;
     width:100%;
+    margin: 0;
     text-align: center;
     color: aqua;
 }
+
 .links .link-item1{
     display: flex;
     flex-wrap: wrap;
@@ -160,6 +168,9 @@ body{
     width: 100%;
 }
 .links .link-item1 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
     height: 40%;
     width: 100%;
@@ -179,6 +190,9 @@ body{
 }
 
 .links .link-item2 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
     height: 40%;
     width: 30%;
