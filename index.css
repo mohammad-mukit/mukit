@@ -137,11 +137,42 @@ body{
 }
 
 .skills{
+    padding: 10px;
     background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
     grid-area: skills;
     border-radius: 15px;
 
 }
+.skills h2{
+    text-align: center;
+    color: rgba(80, 255, 197, 0.5);
+    
+}
+
+.skills .skill-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 65%;
+    width: 100%;
+}
+
+.skills .skill-div a{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
+    height: 35%;
+    width: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
 
 .links{
     display: flex;
