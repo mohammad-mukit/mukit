@@ -19,11 +19,316 @@ body{
 }
 
 .main-container{
+    display: flex;
+    flex-wrap: wrap;
     background-image: linear-gradient(to bottom right, rgba(59, 59, 59, 0.464),rgba(27, 27, 27, 0.377));
-    height: 80vh;
+    height: 120vh;
     width:  70vw;
     margin: 0 10vw 0 10vw;
     padding: 20px;
     border-radius: 20px;
     
 }
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, rgba(42, 42, 42, 0.464),rgba(27, 27, 27, 0.377));
+    border-radius: 10px;
+}
+.skills .skill-item{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.skill-item .outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.skill-item .inner{
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.skill-item.item1 .inner span{
+    color: crimson;
+    font-size: 24px;
+}
+
+.skill-item.item1 svg{
+    /* background-color: yellow; */
+    height: 180px;
+    width: 180px;
+    position: relative;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.skill-item.item1 svg circle{
+    fill: none;
+    stroke: crimson;
+    stroke-width: 17px;
+    stroke-linecap: round;
+    stroke-dasharray: 455;
+    stroke-dashoffset: 455;
+    animation: anim1 3s linear forwards;
+}
+
+@keyframes anim1{
+    100%{
+        stroke-dashoffset: 136.5;
+    }
+}
+
+.skill-item.item2 .inner span{
+    color: rgb(46, 249, 107);
+    font-size: 24px;
+}
+
+.skill-item.item2 svg{
+    /* background-color: yellow; */
+    height: 180px;
+    width: 180px;
+    position: relative;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.skill-item.item2 svg circle{
+    fill: none;
+    stroke: rgb(71, 255, 80);
+    stroke-width: 17px;
+    stroke-linecap: round;
+    stroke-dasharray: 455;
+    stroke-dashoffset: 455;
+    animation: anim2 3s linear forwards;
+}
+
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 227.5;
+    }
+}
+
+.skill-item.item3 .inner span{
+    color: rgb(249, 217, 71);
+    font-size: 24px;
+}
+
+.skill-item.item3 svg{
+    /* background-color: yellow; */
+    height: 180px;
+    width: 180px;
+    position: relative;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.skill-item.item3 svg circle{
+    fill: none;
+    stroke: rgb(255, 252, 71);
+    stroke-width: 17px;
+    stroke-linecap: round;
+    stroke-dasharray: 455;
+    stroke-dashoffset: 455;
+    animation: anim3 3s linear forwards;
+}
+
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 227.5;
+    }
+}
+
+.skill-item.item4 .inner span{
+    color: rgb(249, 134, 46);
+    font-size: 24px;
+}
+
+.skill-item.item4 svg{
+    /* background-color: yellow; */
+    height: 180px;
+    width: 180px;
+    position: relative;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.skill-item.item4 svg circle{
+    fill: none;
+    stroke: rgb(255, 141, 71);
+    stroke-width: 17px;
+    stroke-linecap: round;
+    stroke-dasharray: 455;
+    stroke-dashoffset: 455;
+    animation: anim4 3s linear forwards;
+}
+
+@keyframes anim4{
+    100%{
+        stroke-dashoffset: 136.5;
+    }
+}
+
+
+.skill-item.item5 .inner span{
+    color: rgb(54, 193, 253);
+    font-size: 24px;
+}
+
+.skill-item.item5 svg{
+    /* background-color: yellow; */
+    height: 180px;
+    width: 180px;
+    position: relative;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.skill-item.item5 svg circle{
+    fill: none;
+    stroke: rgb(57, 211, 254);
+    stroke-width: 17px;
+    stroke-linecap: round;
+    stroke-dasharray: 455;
+    stroke-dashoffset: 455;
+    animation: anim5 3s linear forwards;
+}
+
+@keyframes anim5{
+    100%{
+        stroke-dashoffset: 136.5;
+    }
+}
+
+.skill-item.item6 .inner span{
+    color: rgb(249, 46, 147);
+    font-size: 24px;
+}
+
+.skill-item.item6 svg{
+    /* background-color: yellow; */
+    height: 180px;
+    width: 180px;
+    position: relative;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.skill-item.item6 svg circle{
+    fill: none;
+    stroke: rgb(249, 46, 147);
+    stroke-width: 17px;
+    stroke-linecap: round;
+    stroke-dasharray: 455;
+    stroke-dashoffset: 455;
+    animation: anim6 3s linear forwards;
+}
+
+@keyframes anim6{
+    100%{
+        stroke-dashoffset: 227.5;
+    }
+}
+
+
+.skill-item.item7 .inner span{
+    color: rgb(203, 24, 235);
+    font-size: 20px;
+}
+
+.skill-item.item7 svg{
+    /* background-color: yellow; */
+    height: 180px;
+    width: 180px;
+    position: relative;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.skill-item.item7 svg circle{
+    fill: none;
+    stroke: rgb(203, 24, 235);
+    stroke-width: 17px;
+    stroke-linecap: round;
+    stroke-dasharray: 455;
+    stroke-dashoffset: 455;
+    animation: anim7 3s linear forwards;
+}
+
+@keyframes anim7{
+    100%{
+        stroke-dashoffset: 182;
+    }
+}
+
+.skill-item.item8 .inner span{
+    color: rgb(126, 24, 235);
+    font-size: 18px;
+}
+
+.skill-item.item8 svg{
+    /* background-color: yellow; */
+    height: 180px;
+    width: 180px;
+    position: relative;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.skill-item.item8 svg circle{
+    fill: none;
+    stroke: rgb(126, 24, 235);
+    stroke-width: 17px;
+    stroke-linecap: round;
+    stroke-dasharray: 455;
+    stroke-dashoffset: 455;
+    animation: anim8 3s linear forwards;
+}
+
+@keyframes anim8{
+    100%{
+        stroke-dashoffset: 227.5;
+    }
+}
+
+
+.projects{
+    height: 50%;
+    width: 100%;
+    margin-top: 10px;
+    background-image: linear-gradient(to bottom right, rgba(39, 39, 39, 0.536),rgba(27, 27, 27, 0.377));
+    border-radius: 10px;
+} 
