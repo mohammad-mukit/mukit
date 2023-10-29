@@ -42,10 +42,12 @@ body{
     border-radius: 10px;
 }
 .skills .skill-item{
+    /* background-color: red; */
     height: 200px;
     width: 200px;
     overflow: hidden;
     margin: 10px;
+    position: relative;
 }
 
 .skill-item .outer{
@@ -83,8 +85,8 @@ body{
     /* background-color: yellow; */
     height: 180px;
     width: 180px;
-    position: relative;
-    top: -30%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -114,8 +116,8 @@ body{
     /* background-color: yellow; */
     height: 180px;
     width: 180px;
-    position: relative;
-    top: -30%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -145,8 +147,8 @@ body{
     /* background-color: yellow; */
     height: 180px;
     width: 180px;
-    position: relative;
-    top: -30%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -176,8 +178,8 @@ body{
     /* background-color: yellow; */
     height: 180px;
     width: 180px;
-    position: relative;
-    top: -30%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -208,8 +210,8 @@ body{
     /* background-color: yellow; */
     height: 180px;
     width: 180px;
-    position: relative;
-    top: -30%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -239,8 +241,8 @@ body{
     /* background-color: yellow; */
     height: 180px;
     width: 180px;
-    position: relative;
-    top: -30%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -271,8 +273,8 @@ body{
     /* background-color: yellow; */
     height: 180px;
     width: 180px;
-    position: relative;
-    top: -30%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -302,8 +304,8 @@ body{
     /* background-color: yellow; */
     height: 180px;
     width: 180px;
-    position: relative;
-    top: -30%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
